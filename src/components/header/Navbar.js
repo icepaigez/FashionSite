@@ -8,10 +8,10 @@ class NavBar extends Component {
 	render() {
 		return(
 			<nav>
-				<div className="header">
+				<div className="header brand">
 					<h3>MARVY</h3>
 				</div>
-				<div className="header">
+				<div className="header icon">
 					<FontAwesomeIcon className="fa__bars" icon={faBars} />
 				</div>
 				<div className="top__nav">
