@@ -17,11 +17,10 @@ class NavBar extends Component {
 				<div className="top__nav">
 					<nav>
 						<h5>HOME</h5>
-						<h5>WEDDING</h5>
-						<h5>EVENTS</h5>
 						<h5>THE BRAND</h5>
-						<h5>CONTACT US</h5>
 						<h5>CONSULTATION</h5>
+						<h5>MEDIA</h5>
+						<h5>CONTACT US</h5>
 					</nav>
 				</div>
 			</nav>
