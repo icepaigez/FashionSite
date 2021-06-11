@@ -3,7 +3,7 @@ nav {
 	align-items: center;
 	background-color: #000;
 	color: #fff;
-	height: 7em;
+	padding: 2.5em;
 }
 
 .header h3, .header .fa__bars {
@@ -18,16 +18,53 @@ nav {
 	display: flex;
 	align-items: center;
 	margin-left: auto;
-	margin-right: 1.5em;
+	margin-right: 1em;
 }
 
 .fa__bars {
 	font-size: 18px;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 453px) {
 	.top__nav {
 		border: 1px solid black;
 		display: none;
 	}
+}
+
+@media screen and (min-width: 454px) {
+	nav {
+		flex-direction: column;
+		padding: 0.1em;
+	}
+
+	.brand {
+		margin-left: 0;
+		border: 1px solid red;
+		width: 100%;
+		text-align: center;
+	}
+
+	.icon {
+		display: none;
+	}
+
+	.top__nav {
+		border: 1px solid #fff;
+		width: 100%;
+	}
+
+	.top__nav nav {
+		border: 1px solid blue;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.top__nav nav h5 {
+		border: 1px solid blue;
+		margin: 0 0.5em;
+	}
+
 }

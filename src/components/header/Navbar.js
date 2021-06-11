@@ -15,15 +15,14 @@ class NavBar extends Component {
 					<FontAwesomeIcon className="fa__bars" icon={faBars} />
 				</div>
 				<div className="top__nav">
-					<ul>
-						<li>HOME</li>
-						<li>FASHION</li>
-						<li>WEDDING</li>
-						<li>EVENTS</li>
-						<li>THE BRAND</li>
-						<li>CONTACT US</li>
-						<li>CONSULTATION</li>
-					</ul>
+					<nav>
+						<h5>HOME</h5>
+						<h5>WEDDING</h5>
+						<h5>EVENTS</h5>
+						<h5>THE BRAND</h5>
+						<h5>CONTACT US</h5>
+						<h5>CONSULTATION</h5>
+					</nav>
 				</div>
 			</nav>
 		)
