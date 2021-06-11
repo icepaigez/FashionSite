@@ -7,7 +7,7 @@ import "./navbar.css";
 class NavBar extends Component {
 	render() {
 		return(
-			<nav>
+			<nav className="navbar">
 				<div className="header brand">
 					<h3>MARVY</h3>
 				</div>
