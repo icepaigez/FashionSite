@@ -21,6 +21,8 @@ class NavBar extends Component {
 						<h5>CONSULTATION</h5>
 						<h5>MEDIA</h5>
 						<h5>CONTACT US</h5>
+						<h5>TEAM</h5>
+						<h5>ADDRESS</h5>
 					</nav>
 				</div>
 			</nav>

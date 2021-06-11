@@ -32,16 +32,29 @@ nav {
 	font-size: 18px;
 }
 
+.top__nav nav h5 {
+	font-family: 'Nunito', serif;
+	color: #818181;
+}
+
 @media screen and (max-width: 453px) {
 	.top__nav {
 		position: absolute;
 		top: 7.3em;
+		width: 100%;
+		display: none;
 	}
 
 	.top__nav nav {
-		border: 1px solid red;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.top__nav nav h5 {
+		margin: 0;
+		padding: 2em 0;
+		width: 100%;
+		text-align: center;
 	}
 }
 
@@ -77,7 +90,6 @@ nav {
 
 	.top__nav nav h5 {
 		margin: 0.5em 0.3em;
-		font-family: 'Nunito', serif;
 	}
 
 }
