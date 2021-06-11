@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display&display=swap');
 nav {
 	display: flex;
 	align-items: center;
 	background-color: #000;
 	color: #fff;
+	padding: 2em 0;
+}
+
+.header h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 2.5em;
 }
 
 .header h3, .header .fa__bars {
@@ -17,7 +24,7 @@ nav {
 	display: flex;
 	align-items: center;
 	margin-left: auto;
-	padding-right: 1em;
+	padding-right: 1.5em;
 }
 
 .fa__bars {
@@ -26,7 +33,6 @@ nav {
 
 @media screen and (max-width: 453px) {
 	.top__nav {
-		border: 1px solid black;
 		display: none;
 	}
 }
@@ -39,9 +45,9 @@ nav {
 
 	.brand {
 		margin-left: 0;
-		border: 1px solid red;
 		width: 100%;
 		text-align: center;
+		margin: 0 0 1em 0;
 	}
 
 	.icon {
@@ -49,7 +55,6 @@ nav {
 	}
 
 	.top__nav {
-		border: 1px solid #fff;
 		width: 100%;
 		max-width: 80%;
 	}
@@ -64,6 +69,7 @@ nav {
 
 	.top__nav nav h5 {
 		margin: 0.5em 0.3em;
+		font-family: 'Nunito', serif;
 	}
 
 }
