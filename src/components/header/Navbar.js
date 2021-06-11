@@ -9,7 +9,7 @@ class NavBar extends Component {
 		return(
 			<nav className="navbar">
 				<div className="header brand">
-					<h3>MARVY</h3>
+					<h3>MARVEE</h3>
 				</div>
 				<div className="header icon">
 					<FontAwesomeIcon className="fa__bars" icon={faBars} />

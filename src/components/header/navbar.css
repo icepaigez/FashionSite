@@ -5,6 +5,7 @@ nav {
 	background-color: #000;
 	color: #fff;
 	padding: 2em 0;
+	position: relative;
 }
 
 .header h3 {
@@ -33,7 +34,14 @@ nav {
 
 @media screen and (max-width: 453px) {
 	.top__nav {
-		display: none;
+		position: absolute;
+		top: 7.3em;
+	}
+
+	.top__nav nav {
+		border: 1px solid red;
+		display: flex;
+		flex-direction: column;
 	}
 }
 
