@@ -13,7 +13,7 @@ class NavBar extends Component {
 		}
 	}
 
-	toggleNavbar = () => {
+	toggleNavbar = () => { 
 		let navElem = document.querySelector('.top__nav')
 		if (navElem.style.display === "") {
 			navElem.style.display = "block"
