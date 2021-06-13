@@ -32,9 +32,18 @@ nav {
 	font-size: 18px;
 }
 
+.top__nav nav .active {
+	color: #fff;
+}
+
 .top__nav nav h5 {
 	font-family: 'Nunito', serif;
 	color: #818181;
+}
+
+.top__nav nav h5:hover {
+	color: #fff;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 453px) {
