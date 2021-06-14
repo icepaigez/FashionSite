@@ -5,7 +5,7 @@ nav {
 	background-color: #000;
 	color: #fff;
 	padding: 2em 0;
-	position: relative; 
+	/*position: relative; */
 }
 
 /*.navbar {
@@ -54,15 +54,16 @@ nav {
 
 @media screen and (max-width: 453px) {
 	.top__nav {
-		position: absolute;
-		top: 7.3em;
-		width: 100%;
-		display: none;
+		/*position: absolute;*/
+		/*top: 7.3em;
+		width: 100%;*/
+		display: none; 
 	}
 
 	.top__nav nav {
 		display: flex;
 		flex-direction: column;
+		display: none; 
 	}
 
 	.top__nav nav h5 {
