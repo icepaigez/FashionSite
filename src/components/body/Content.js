@@ -1,15 +1,27 @@
 import React, { Component } from "react";
+import { Parallax } from 'react-parallax';
 import "./content.css";
 import img1 from "../../images/marq.jpg";
 import img2 from "../../images/marqe.jpg";
 import img3 from "../../images/marquez.jpg";
 
+const inlineStyle = {
+	// backgroundPosition: 'center center',
+	// backgroundRepeat: 'no-repeat',
+	// backgroundAttachment: 'fixed',
+	// backgroundSize: 'cover',
+	// backgroundColor: '#464646',
+	height: '100vh',
+}
+
 class Content extends Component {
 
 	render() {
 		return(
-			<main>			
-				<div className="top__parallax"></div>
+			<main>	
+				<Parallax bgImage={img3}>		
+					<div style={inlineStyle} className="top__parallax"></div>
+				</Parallax>
 				<section>
 					<h1>Parallax Website Tutorial</h1>
 					 <h3>Learn to create a parallax scroll website</h3>
