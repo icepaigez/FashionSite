@@ -4,7 +4,12 @@ main {
 	width: 100%;
 }
 
-/*.top__parallax {
+.top__parallax img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+main .parallax2 {
 	background-image: url(../../images/marquez.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -12,4 +17,30 @@ main {
 	background-size: cover;
 	background-color: #464646;
 	height: 100vh;
-}*/
+}
+
+main .parallax3 {
+	background-image: url(../../images/marb.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	height: 100vh;
+}
+
+main .parallax4 {
+	background-image: url(../../images/marq.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	height: 100vh;
+}
+
+main .footer {
+	background-color: black;
+	color: #fff;
+	border: 1px solid transparent;
+}
