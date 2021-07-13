@@ -4,52 +4,22 @@ main {
 	width: 100%;
 }
 
-.parallax {
-	/*border: 1px solid red;*/
-	height: 500px;
-}
-
-.paral {
-	color: #fff;
-}
-.top__parallax img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-/*main .parallax2 {
-	background-image: url(../../images/marquez.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #464646;
+.section {
 	height: 100vh;
-}
-
-main .parallax3 {
-	background-image: url(../../images/marb.jpg);
-	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
-	background-color: #464646;
-	height: 100vh;
+	background-position: center;
+	background-attachment: fixed;
 }
 
-main .parallax4 {
+.s1 {
 	background-image: url(../../images/marq.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #464646;
-	height: 100vh;
 }
 
-main .footer {
-	background-color: black;
-	color: #fff;
-	border: 1px solid transparent;
+.s2 {
+	background-image: url(../../images/pose.jpg);
 }
-*/
+
+.s3 {
+	background-image: url(../../images/marc.jpg);
+}
