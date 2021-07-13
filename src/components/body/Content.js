@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import "./content.css";
-import img1 from "../../images/marq.jpg";
-import img2 from "../../images/pose.jpg";
-import img3 from "../../images/marc.jpg";
 
 
 class Content extends Component {
