@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display&display=swap');
-nav {
+/*nav {
 	display: flex;
 	align-items: center;
 	background-color: #000;
 	color: #fff;
 	padding: 2em 0;
-	/*position: relative; */
 }
 
 .navbar {
@@ -51,17 +50,17 @@ nav {
 	color: #fff;
 	cursor: pointer;
 }
-
-@media screen and (max-width: 453px) {
+*/
+/*@media screen and (max-width: 453px) {
 	.top__nav {
-		/*position: absolute;*/
-		/*top: 7.3em;
-		width: 100%;*/
+		position: absolute;
+		top: 6.7em;
+		width: 100%;
 		display: none; 
 	}
 
 	.top__nav nav {
-		display: flex;
+		display: flex; 
 		flex-direction: column;
 		display: none; 
 	}
@@ -108,4 +107,4 @@ nav {
 		margin: 0.5em 0.3em;
 	}
 
-}
+}*/
