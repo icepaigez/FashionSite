@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import "./navbar.css";
 
 
@@ -10,54 +10,42 @@ class NavBar extends Component {
 	constructor() { 
 		super()
 		this.state = {
-			navItem: [{id:1, active:true}, {id:2, active:false}, {id:3, active:false}, {id:4, active:false}, {id:5, active:false}],
+			menuClicked: false,
+			menuItems: MenuItems
 		}
 	}
 
 	toggleNavbar = () => { 
-		console.log('this is the NavBar')
+		this.setState({
+			menuClicked: !this.state.menuClicked
+		})
 	}
 
 	setActive = e => {
 		let selectedItem = Number(e.currentTarget.id)
-		let status = e.currentTarget.className
-		if (status !== "active") {
+		let status = e.target.className
+		if (!status.includes('selected')) {
 			this.setState(prevState => ({
-				navItem: prevState.navItem.map(obj => obj.id === selectedItem ? { ...obj, active:true } : { ...obj, active:false })
+				menuItems: prevState.menuItems.map(obj => obj.id === selectedItem ? { ...obj, cName:'nav__links selected' } : { ...obj, cName:'nav__links' })
 			}))
 		}
 	}
 
 	render() {
-		const { navItem } = this.state;
+		const { menuClicked, menuItems } = this.state;
 		return(
 			<nav className="navbar__items">
 				<h1 className="navbar__logo">MARVEE</h1>
-				<div className="menu__icon">
-					
+				<div onClick={this.toggleNavbar} className="menu__icon">
+					{ menuClicked ? <FontAwesomeIcon className="fa__bars" icon={faTimes}/> : <FontAwesomeIcon className="fa__bars" icon={faBars}/> }
 				</div>
-				<ul>
+				<ul className={menuClicked ? "nav__menu active" : "nav__menu"}>
 					{
-						MenuItems.map((obj, i) => {
-							return <li key={i}><a className={obj.cName} href={obj.url}>{obj.title}</a></li>
+						menuItems.map(obj => {
+							return <li onClick={this.setActive} id={obj.id} key={obj.id}><a className={obj.cName} href={obj.url}>{obj.title}</a></li>
 						})
 					}
 				</ul>
-				{/*<div className="header brand">
-					<h3>MARVEE</h3>
-				</div>
-				<div onClick={this.toggleNavbar} className="header icon">
-					<FontAwesomeIcon className="fa__bars" icon={faBars}/>
-				</div>
-				<div className="top__nav">
-					<nav>
-						<h5 onClick={this.setActive} className={navItem[0].active ? "active" : ""} id={navItem[0].id}>HOME</h5>
-						<h5 onClick={this.setActive} className={navItem[1].active ? "active" : ""} id={navItem[1].id}>THE BRAND</h5>
-						<h5 onClick={this.setActive} className={navItem[2].active ? "active" : ""} id={navItem[2].id}>CONSULTATION</h5>
-						<h5 onClick={this.setActive} className={navItem[3].active ? "active" : ""} id={navItem[3].id}>MEDIA</h5>
-						<h5 onClick={this.setActive} className={navItem[4].active ? "active" : ""} id={navItem[4].id}>CONTACT US</h5>
-					</nav>
-				</div>*/}
 			</nav>
 		)
 	}
