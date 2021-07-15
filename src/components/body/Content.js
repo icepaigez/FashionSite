@@ -10,6 +10,11 @@ import slide2 from "../../images/slide2.jpg";
 import slide3 from "../../images/slide3.jpg";
 import slide4 from "../../images/slide4.jpg";
 import slide5 from "../../images/slide5.jpg";
+import slide6 from "../../images/slide6.jpg";
+import slide7 from "../../images/slide7.jpg";
+import slide8 from "../../images/slide8.jpg";
+import slide9 from "../../images/slide9.jpg";
+import slide10 from "../../images/slide10.jpg";
 
 
 class Content extends Component {
@@ -68,6 +73,21 @@ class Content extends Component {
 							</div>
 							<div className="item">
 								<img src={slide5} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide6} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide7} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide8} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide9} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide10} alt=""/>
 							</div>
 						</div>
 					</div>

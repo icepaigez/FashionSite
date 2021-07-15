@@ -68,7 +68,7 @@ main {
 
 .section__2 h2 {
 	text-align: center;
-	padding: 5em 0 2em 0;
+	padding: 5em 0 3em 0;
 	font-family: 'Varela Round', sans-serif;
 	letter-spacing: 0.3em;
 	font-weight: 100;
@@ -89,7 +89,32 @@ main {
 
 .section__2 .horizontal__slider {
 	text-align: center;
-	margin: 0 1em 0 1em;
+	margin: 0 4em 0 4em;
+	padding: 1em 1em 0 1em;
+	background-color: #fff;
+	display: block;
+	overflow-x: scroll;
+	box-sizing: border-box;
+}
+
+.section__2 .horizontal__slider::-webkit-scrollbar {
+	display: none;
+}
+
+.section__2 .slider__container {
+	display: block;
+	white-space: nowrap;
+}
+
+.section__2 .item {
+	display: inline-block;
+	height: 15em;
+	margin-right: 1em;
+}
+
+.section__2 .item img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .s2 {
@@ -102,8 +127,14 @@ main {
 
 @media screen and (max-width: 427px) {
 	.section__2 h2 {
-		padding: 5em 1em 5em 1em;
+		padding: 3em 1em 2em 1em;
 		letter-spacing: 0.1em;
 		font-weight: 100;
+	}
+}
+
+@media screen and (max-width: 676px) {
+	.section__2 .horizontal__slider {
+		margin: 0 1em 0 1em;
 	}
 }
