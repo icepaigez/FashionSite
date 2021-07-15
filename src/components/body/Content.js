@@ -92,6 +92,11 @@ class Content extends Component {
 						</div>
 					</div>
 					<div className="divider"><hr/></div>
+					<div className="footer">
+						<p className="addr">LAGOS</p>
+						<p>Rainbow Drive, Peace Estate, Ikeja</p>
+						<p>To schedule an appointment: 929-293-1272 | <a href="mailto:info@marvee.org?subject=Mail from Our Website">info@marvee.org</a></p>
+					</div>
 				</section>
 			</main>
 		)

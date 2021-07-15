@@ -120,7 +120,24 @@ main {
 
 .section__2 .divider {
 	height: 0.1px;
-	margin: 4em 1em 4em 1em;
+	margin: 4em 1em 2em 1em;
+}
+
+.section__2 .footer {
+	text-align: center;
+	line-height: 2.8em;
+}
+
+.footer p {
+	font-size: 0.8em;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer .addr {
+	font-style: italic;
 }
 
 .s2 {
@@ -147,6 +164,6 @@ main {
 
 @media screen and (min-width: 676px) {
 	.section__2 .divider {
-		margin: 4em;
+		margin: 3em;
 	}
 }
