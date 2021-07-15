@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import "./content.css";
 import img1 from "../../images/back.jpg";
 import img2 from "../../images/front.jpg";
@@ -96,6 +98,9 @@ class Content extends Component {
 						<p className="addr">LAGOS</p>
 						<p>Rainbow Drive, Peace Estate, Ikeja</p>
 						<p>To schedule an appointment: 929-293-1272 | <a href="mailto:info@marvee.org?subject=Mail from Our Website">info@marvee.org</a></p>
+					</div>
+					<div className="socials">
+						<a href="https://www.instagram.com/marveeofficial/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa__bars" icon={faInstagram}/></a>
 					</div>
 				</section>
 			</main>
