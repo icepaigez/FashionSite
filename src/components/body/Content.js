@@ -5,6 +5,11 @@ import img2 from "../../images/front.jpg";
 import img3 from "../../images/grey.jpg";
 import img4 from "../../images/low.jpg";
 import img5 from "../../images/brown.jpg";
+import slide1 from "../../images/slide1.jpg";
+import slide2 from "../../images/slide2.jpg";
+import slide3 from "../../images/slide3.jpg";
+import slide4 from "../../images/slide4.jpg";
+import slide5 from "../../images/slide5.jpg";
 
 
 class Content extends Component {
@@ -47,8 +52,24 @@ class Content extends Component {
 				<div className="section s3"></div>
 				<section className="section__2">
 					<h2>FOLLOW US ON <span><a href="https://www.instagram.com/marveeofficial/" target="_blank" rel="noreferrer">INSTAGRAM</a></span></h2>
-					<div className="poster">
-						hello
+					<div className="horizontal__slider">
+						<div className="slider__container">
+							<div className="item">
+								<img src={slide1} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide2} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide3} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide4} alt=""/>
+							</div>
+							<div className="item">
+								<img src={slide5} alt=""/>
+							</div>
+						</div>
 					</div>
 				</section>
 			</main>

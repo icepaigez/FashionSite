@@ -68,7 +68,7 @@ main {
 
 .section__2 h2 {
 	text-align: center;
-	padding: 5em 0 5em 0;
+	padding: 5em 0 2em 0;
 	font-family: 'Varela Round', sans-serif;
 	letter-spacing: 0.3em;
 	font-weight: 100;
@@ -87,9 +87,9 @@ main {
 	cursor: pointer;
 }
 
-.section__2 .poster {
-	border: 1px solid #fff;
+.section__2 .horizontal__slider {
 	text-align: center;
+	margin: 0 1em 0 1em;
 }
 
 .s2 {
