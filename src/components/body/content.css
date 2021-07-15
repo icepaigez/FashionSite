@@ -144,10 +144,12 @@ main {
 	text-align: center;
 	padding: 0.1em;
 	font-size: 1.5em;
+	margin-bottom: 2em;
 }
 
 .socials a {
 	color: #fff;
+	margin: 0 0.2em 0 0.2em;
 }
 
 .s2 {

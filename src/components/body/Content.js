@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faTwitter, faPinterest, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import "./content.css";
 import img1 from "../../images/back.jpg";
 import img2 from "../../images/front.jpg";
@@ -101,6 +101,9 @@ class Content extends Component {
 					</div>
 					<div className="socials">
 						<a href="https://www.instagram.com/marveeofficial/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa__bars" icon={faInstagram}/></a>
+						<a href="https://www.twitter.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa__bars" icon={faTwitter}/></a>
+						<a href="https://www.pinterest.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa__bars" icon={faPinterest}/></a>
+						<a href="https://www.facebook.com" target="_blank" rel="noreferrer"><FontAwesomeIcon className="fa__bars" icon={faFacebookSquare}/></a>
 					</div>
 				</section>
 			</main>
