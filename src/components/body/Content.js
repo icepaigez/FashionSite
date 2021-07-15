@@ -91,6 +91,7 @@ class Content extends Component {
 							</div>
 						</div>
 					</div>
+					<div className="divider"><hr/></div>
 				</section>
 			</main>
 		)
