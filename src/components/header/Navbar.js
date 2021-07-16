@@ -12,8 +12,12 @@ class NavBar extends Component {
 		super()
 		this.state = {
 			menuClicked: false,
-			menuItems: MenuItems
+			menuItems: localStorage.getItem('menu')
 		}
+	}
+
+	componentDidMount() {
+		localStorage.setItem('menu', JSON.stringify(MenuItems))
 	}
 
 	toggleNavbar = () => { 
@@ -22,18 +26,28 @@ class NavBar extends Component {
 		})
 	}
 
+	componentWillUnmount() {
+		localStorage.removeItem('menu');
+	}
+
 	setActive = e => {
 		let selectedItem = Number(e.currentTarget.id)
 		let status = e.target.className
 		if (!status.includes('selected')) {
-			this.setState(prevState => ({
-				menuItems: prevState.menuItems.map(obj => obj.id === selectedItem ? { ...obj, cName:'nav__links selected' } : { ...obj, cName:'nav__links' })
-			}))
+			let current = JSON.parse(localStorage.getItem('menu'))
+			let updated = current.map(obj => obj.id === selectedItem ? { ...obj, cName:'nav__links selected' } : { ...obj, cName:'nav__links' })
+			localStorage.setItem('menu', JSON.stringify(updated))
+			this.setState({
+				menuItems: localStorage.getItem('menu'),
+				menuClicked: !this.state.menuClicked
+			})
 		}
 	}
 
 	render() {
 		const { menuClicked, menuItems } = this.state;
+		let items = JSON.parse(menuItems)
+		
 		return(
 			<nav className="navbar__items">
 				<h1 className="navbar__logo">MARVEE</h1>
@@ -42,7 +56,7 @@ class NavBar extends Component {
 				</div>
 				<ul className={menuClicked ? "nav__menu active" : "nav__menu"}>
 					{
-						menuItems.map(obj => {
+						items.map(obj => {
 							return <li onClick={this.setActive} id={obj.id} key={obj.id}><Link className={obj.cName} to={obj.url}>{obj.title}</Link></li>
 						})
 					}
