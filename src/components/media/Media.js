@@ -1,8 +1,12 @@
 import "./media.css";
+import Base from "../foot/Base";
 
 const Media = () => {
 	return(
-		<div>media</div>
+		<div>
+			<div>media</div>
+			<Base />
+		</div>
 	)
 }
 

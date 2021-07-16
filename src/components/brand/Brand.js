@@ -1,8 +1,12 @@
 import "./brand.css";
+import Base from "../foot/Base";
 
 const Brand = () => {
 	return(
-		<div>Brand</div>
+		<div>
+			<div>Brand</div>
+			<Base />
+		</div>
 	)
 }
 

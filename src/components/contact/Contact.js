@@ -1,8 +1,12 @@
 import "./contact.css";
+import Base from "../foot/Base";
 
 const Contact = () => {
 	return(
-		<div>Contact</div>
+		<div>
+			<div>Contact</div>
+			<Base />
+		</div>
 	)
 }
 

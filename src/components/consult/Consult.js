@@ -1,8 +1,12 @@
 import "./consult.css";
+import Base from "../foot/Base";
 
 const Consult = () => {
 	return(
-		<div>Consult</div>
+		<div>
+			<div>Consult</div>
+			<Base />
+		</div>
 	)
 }
 
