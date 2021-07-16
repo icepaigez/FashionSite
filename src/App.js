@@ -3,6 +3,7 @@ import NavBar from "./components/header/Navbar";
 import Content from "./components/home/Content";
 import Brand from "./components/brand/Brand";
 import Consult from "./components/consult/Consult";
+import Contact from "./components/contact/Contact";
 import './App.css';
 
 function App() {
@@ -10,6 +11,10 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+          <Route path='/contact'>
+            <NavBar />
+            <Brand />
+          </Route>
           <Route path='/consult'>
             <NavBar />
             <Brand />
