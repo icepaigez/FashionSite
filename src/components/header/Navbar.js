@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import { MenuItems } from "./MenuItems";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -37,16 +38,16 @@ class NavBar extends Component {
 			<nav className="navbar__items">
 				<h1 className="navbar__logo">MARVEE</h1>
 				<div onClick={this.toggleNavbar} className="menu__icon">
-					{ menuClicked ? <FontAwesomeIcon className="fa__bars" icon={faTimes}/> : <FontAwesomeIcon className="fa__bars" icon={faBars}/> }
+					{ menuClicked ? <FontAwesomeIcon icon={faTimes}/> : <FontAwesomeIcon icon={faBars}/> }
 				</div>
 				<ul className={menuClicked ? "nav__menu active" : "nav__menu"}>
 					{
 						menuItems.map(obj => {
-							return <li onClick={this.setActive} id={obj.id} key={obj.id}><a className={obj.cName} href={obj.url}>{obj.title}</a></li>
+							return <li onClick={this.setActive} id={obj.id} key={obj.id}><Link className={obj.cName} to={obj.url}>{obj.title}</Link></li>
 						})
 					}
 				</ul>
-			</nav>
+			</nav> 
 		)
 	}
 }
