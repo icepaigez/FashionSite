@@ -21,10 +21,22 @@ import slide10 from "../../images/slide10.jpg";
 
 class Content extends Component {
 
+	constructor() {
+		super()
+		this.scrollDiv = React.createRef();
+	}
+
+
 	render() {
 		return(
 			<main>		
-				<div className="section s1"></div>
+				<div className="section s1">
+					<div className="arrow">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
 				<section className="section__1">
 					<h1>DISCOVER</h1>
 					<div className="collections">
@@ -54,10 +66,18 @@ class Content extends Component {
 							<button>Newest styles</button>
 						</div>
 					</div>
+					<div 
+						className="arrow__2"
+						onClick={() => this.scrollDiv.current.scrollIntoView({ behavior: 'smooth' })}
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</section>
 				
 				<div className="section s3"></div>
-				<section className="section__2">
+				<section ref={this.scrollDiv} className="section__2">
 					<h2>FOLLOW US ON <span><a href="https://www.instagram.com/marveeofficial/" target="_blank" rel="noreferrer">INSTAGRAM</a></span></h2>
 					<div className="horizontal__slider">
 						<div className="slider__container">
